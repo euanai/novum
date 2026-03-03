@@ -238,7 +238,7 @@ AGPL-3.0. See [LICENSE](LICENSE) for details.
 ```bibtex
 @software{novum2026,
   author={Euan},
-  title={Novum: Automated Research Pipeline with Mechanical Anti-Fabrication Guarantees},
+  title={Novum: Automated ML Research with Mechanical Constraint Enforcement and Structured Iteration},
   year={2026},
   url={https://github.com/euanai/novum}
 }
