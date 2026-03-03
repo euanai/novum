@@ -198,7 +198,7 @@ novum/
 
 ## Known Limitations
 
-1. **Single GPU** — Not designed for multi-node distributed training
+1. **Single node** — Tested on single-GPU setups; multi-GPU on one machine should work but is untested; multi-node distributed training is not supported
 2. **CV keywords only** — NLP/systems/theory domains need new keyword JSON files (see [CONTRIBUTING.md](CONTRIBUTING.md))
 3. **Unix-only** — Uses `os.killpg`, `signal.SIGTERM`, `nohup`
 4. **No paper cache cleanup** — `paper-cache/txt/` grows over time
