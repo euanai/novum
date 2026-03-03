@@ -27,9 +27,7 @@
 
 A single `/research` command ran autonomously for 30 hours — literature survey, hypothesis generation, experiment execution, and paper draft writing — with no human intervention.
 
-<p align="center">
-  <img src="docs/cogitated.png" alt="Novum running for 30 hours" width="600">
-</p>
+<img src="docs/cogitated.png" alt="Novum running for 30 hours" width="100%">
 
 | Metric | Value |
 |--------|-------|
@@ -51,6 +49,9 @@ bash scripts/install.sh
 This installs hooks, agents, commands, skills, and rules into `~/.claude/`.
 
 **Requirements**: [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) with API key (Opus 4.6 recommended), Python 3.10+, Node.js 18+, NVIDIA GPU 8GB+ VRAM.
+
+> [!WARNING]
+> Fully autonomous runs require Claude Code's `--dangerously-skip-permissions` flag, which bypasses all tool approval prompts. The agent can execute arbitrary commands and modify files without confirmation. Use at your own risk.
 
 ```bash
 # Scout: find low-cost opportunities from a conference
