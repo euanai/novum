@@ -1,0 +1,36 @@
+{
+  "_description": "Keywords indicating potentially low-cost / reproducible methods. Papers matching these are prioritized in scout mode for users with limited GPU budgets. Validated against CVPR 2025.",
+  "_version": "1.1",
+  "positive_signals": {
+    "training_free": {
+      "keywords": ["training-free", "training free", "zero-shot", "no training", "test-time", "plug-and-play"],
+      "gpu_cost_estimate": "< 1h",
+      "weight": 1.0
+    },
+    "few_shot": {
+      "keywords": ["few-shot", "few shot", "low-shot", "data-efficient", "sample efficient", "label-efficient"],
+      "gpu_cost_estimate": "1-4h",
+      "weight": 0.8
+    },
+    "adapter_based": {
+      "keywords": ["adapter", "LoRA", "prompt tuning", "prefix tuning", "parameter-efficient", "PEFT", "fine-tuning"],
+      "gpu_cost_estimate": "2-8h",
+      "weight": 0.7
+    },
+    "single_gpu": {
+      "keywords": ["single GPU", "1x GPU", "one GPU", "RTX 3090", "RTX 4090", "A6000"],
+      "gpu_cost_estimate": "4-24h",
+      "weight": 0.6
+    },
+    "distillation": {
+      "keywords": ["distillation", "knowledge transfer", "teacher-student", "model compression"],
+      "gpu_cost_estimate": "4-16h",
+      "weight": 0.5
+    }
+  },
+  "generic_false_positives": {
+    "_note": "These words appeared frequently in CVPR 2025 screening but have low signal for research opportunity. Do NOT use as primary filters.",
+    "overly_broad": ["feature", "human", "face", "image", "learning", "model", "network", "representation", "attention", "transformer"],
+    "action": "Only use these in conjunction with domain-specific keywords, never alone"
+  }
+}

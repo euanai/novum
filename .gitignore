@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.research/
+.claude/
+papers/
+*.backup
+*.bak
+.env
+config.yaml
+node_modules/
+*.log
+.DS_Store

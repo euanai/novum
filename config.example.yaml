@@ -1,0 +1,41 @@
+# Novum Configuration
+# Copy this file to config.yaml and customize for your setup.
+# config.yaml is gitignored — your settings stay local.
+
+# GPU Hardware
+# Auto-detected via nvidia-smi if not set. Override if detection fails.
+gpu:
+  name: null           # e.g., "RTX 4090", "A100", "H100"
+  vram_gb: null        # e.g., 24, 80
+  # Relative speed for GPU-hour estimation (H100=1.0 baseline)
+  # Common values: H100=1.0, A100=0.6, L40S=0.4, RTX_4090=0.55, V100=0.25, RTX_3090=0.3
+  speed_factor: null
+
+# Network Configuration
+# Set these if you're behind a proxy or want to use package mirrors.
+proxy:
+  http: null           # e.g., "http://proxy.example.com:8080"
+  https: null          # e.g., "http://proxy.example.com:8080"
+
+# Package Mirrors (optional, speeds up downloads in some regions)
+mirrors:
+  pip: null            # e.g., "https://your-pip-mirror/simple"
+  conda: null          # e.g., "https://your-conda-mirror/pkgs/main"
+  huggingface: null    # e.g., "https://your-hf-mirror"
+
+# Pipeline Defaults
+pipeline:
+  default_budget_hours: 8       # Default GPU budget for /research runs
+  max_websearch_per_phase: 15   # Rate limit WebSearch calls per phase
+  max_iteration_cycles: 5       # Maximum hypothesis iteration cycles
+
+# Tournament Settings (Successive Halving)
+tournament:
+  budget_split: [15, 30, 55]    # Round budget fractions (%)
+  explore_ratio: 0.4            # Exploration diversity protection threshold
+
+# Target Venue Thresholds
+venue_thresholds:
+  oral: 7.5
+  poster: 6.5
+  workshop: 5.0

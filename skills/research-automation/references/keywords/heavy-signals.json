@@ -1,0 +1,42 @@
+{
+  "_description": "Keywords indicating high-cost methods that should be deprioritized in scout mode for budget-constrained users. If paper matches these AND no lightweight signals, mark as over-budget.",
+  "_version": "1.1",
+  "negative_signals": {
+    "large_scale_pretrain": {
+      "keywords": ["large-scale pretraining", "pretrained from scratch", "train from scratch", "pre-training"],
+      "typical_cost": ">100h A100-eq",
+      "confidence": "high"
+    },
+    "multi_gpu_cluster": {
+      "keywords": ["8x A100", "16x A100", "32x A100", "64x A100", "128 GPUs", "256 GPUs", "TPU pod", "multi-node"],
+      "typical_cost": ">200h A100-eq",
+      "confidence": "high"
+    },
+    "large_dataset": {
+      "keywords": ["ImageNet-22k", "LAION", "WebLI", "CC12M", "billion-scale", "web-scale"],
+      "typical_cost": ">50h A100-eq",
+      "confidence": "medium"
+    },
+    "foundation_model": {
+      "keywords": ["foundation model", "billion parameters", "70B", "13B", "7B parameters"],
+      "typical_cost": ">100h A100-eq",
+      "confidence": "medium"
+    },
+    "reinforcement_learning": {
+      "keywords": ["reinforcement learning from", "RLHF", "PPO training", "reward model training"],
+      "typical_cost": ">50h A100-eq",
+      "confidence": "medium"
+    }
+  },
+  "cost_normalization": {
+    "_note": "Approximate GPU hour equivalencies for ranking (A100 as baseline)",
+    "V100": 1.5,
+    "A100": 1.0,
+    "A6000": 1.2,
+    "RTX_3090": 1.5,
+    "RTX_4090": 0.9,
+    "H100": 0.6,
+    "TPU_v3": 0.8,
+    "TPU_v4": 0.5
+  }
+}

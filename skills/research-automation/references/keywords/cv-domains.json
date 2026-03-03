@@ -1,0 +1,46 @@
+{
+  "_description": "CV sub-domain keywords for conference paper screening. Each domain has positive keywords (include) and negative keywords (exclude to reduce false positives). Validated against CVPR 2025 1696 papers.",
+  "_version": "1.1",
+  "domains": {
+    "vision-language": {
+      "include": ["vision-language", "VLM", "visual question answering", "VQA", "image captioning", "visual grounding", "referring expression", "multimodal", "CLIP", "text-to-image"],
+      "exclude": []
+    },
+    "object-detection": {
+      "include": ["object detection", "detector", "YOLO", "DETR", "anchor-free", "bounding box", "NMS"],
+      "exclude": ["face detection"]
+    },
+    "segmentation": {
+      "include": ["segmentation", "semantic segmentation", "instance segmentation", "panoptic", "SAM", "segment anything", "mask prediction"],
+      "exclude": []
+    },
+    "3d-vision": {
+      "include": ["3D reconstruction", "NeRF", "neural radiance", "gaussian splatting", "3D generation", "point cloud", "depth estimation", "stereo", "multi-view", "3D-aware"],
+      "exclude": []
+    },
+    "generation": {
+      "include": ["diffusion model", "image generation", "text-to-image", "image synthesis", "GAN", "generative", "stable diffusion", "inpainting", "image editing", "video generation"],
+      "exclude": []
+    },
+    "video-understanding": {
+      "include": ["video understanding", "action recognition", "temporal", "video captioning", "video QA", "optical flow", "video segmentation", "tracking"],
+      "exclude": []
+    },
+    "embodied-ai": {
+      "include": ["embodied", "robotic", "manipulation", "navigation", "VLA", "vision-language-action", "robot learning", "sim-to-real"],
+      "exclude": []
+    },
+    "medical-imaging": {
+      "include": ["medical image", "pathology", "radiology", "CT scan", "MRI", "diagnosis", "clinical"],
+      "exclude": []
+    },
+    "autonomous-driving": {
+      "include": ["autonomous driving", "self-driving", "planning", "nuScenes", "Waymo", "BEV", "bird's-eye view", "lane detection"],
+      "exclude": []
+    },
+    "efficient-models": {
+      "include": ["efficient", "lightweight", "pruning", "quantization", "knowledge distillation", "model compression", "neural architecture search", "NAS", "mobile"],
+      "exclude": []
+    }
+  }
+}
