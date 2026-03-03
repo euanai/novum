@@ -30,6 +30,9 @@ if (input.tool_name !== 'Bash') process.exit(0);
 const cmd = (input.tool_input?.command || '').trim();
 if (!cmd) process.exit(0);
 
+// ── No proxy configured? Nothing to guard against ──
+if (!process.env.http_proxy && !process.env.https_proxy) process.exit(0);
+
 // ── Proxy already handled? If so, always ALLOW ──
 // These patterns indicate the command explicitly manages proxy/mirror settings.
 // Customize these patterns for your network environment.
