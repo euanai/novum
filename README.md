@@ -146,6 +146,7 @@ When experiments fail, the pipeline automatically regresses: small loop (tune hy
 ## Related Projects
 
 - [AI Scientist v2](https://github.com/SakanaAI/AI-Scientist-v2) / [v1](https://github.com/SakanaAI/AI-Scientist) — End-to-end paper generation via agentic tree search (Sakana AI)
+- [AI-Researcher](https://github.com/HKUDS/AI-Researcher) — Multi-agent research automation with Gradio GUI (HKU)
 - [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — LLM research assistant with optional human-in-the-loop (JHU)
 - [PaperQA2](https://github.com/Future-House/paper-qa) — RAG-based scientific literature QA (Future House)
 - [GPT Researcher](https://github.com/assafelovic/gpt-researcher) — Web research report generation
