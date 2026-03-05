@@ -822,8 +822,7 @@ Dispatch a literature-searcher Worker via Task tool:
 ```
 Task tool → subagent_type: "general-purpose", model: "sonnet"
 name: "literature-searcher"
-Prompt: "First, Read ~/.claude/agents/literature-reviewer.md for reference on literature search methodology.
-  Search for papers on '{topic}' using Semantic Scholar Bulk API and WebSearch.
+Prompt: "Search for papers on '{topic}' using Semantic Scholar Bulk API and WebSearch.
   Round 1: Direct topic search via Semantic Scholar.
   Round 2: Extract new keywords from Round 1, search again.
   Round 3: Citation chain — find key papers, search 'papers citing X'.
@@ -1251,8 +1250,7 @@ Dispatch a Worker to deeply read the selected base codebase:
 ```
 Task tool → subagent_type: "general-purpose", model: "sonnet"
 name: "code-analyst"
-Prompt: "First, Read ~/.claude/agents/architect.md for code analysis methodology.
-  Read the codebase at $RESEARCH_DIR/phase2_sota/repos/{selected_base}/
+Prompt: "Read the codebase at $RESEARCH_DIR/phase2_sota/repos/{selected_base}/
   Focus on: model/*.py, train.py, data/*.py, loss/*.py, configs/*.yaml
   Produce $RESEARCH_DIR/{PHASE3_DIR}/codebase-analysis.md with:
   - Architecture diagram (text-based)
@@ -2238,8 +2236,7 @@ Dispatch data-analyst Worker if available:
 ```
 Task tool → subagent_type: "general-purpose", model: "sonnet"
 name: "data-analyst"
-Prompt: "First, Read ~/.claude/agents/data-analyst.md for your complete instructions.
-  Analyze experiment results in $RESEARCH_DIR/phase6_experiments/*/results.json.
+Prompt: "Analyze experiment results in $RESEARCH_DIR/phase6_experiments/*/results.json.
   Compute: p-values, confidence intervals, effect sizes.
   If <3 runs available: note 'statistical significance pending more runs'.
   Generate comparison figures (learning curves, bar charts).

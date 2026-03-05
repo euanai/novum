@@ -39,15 +39,3 @@ The following agents are part of the `/research` pipeline and should be invoked 
 4. Workers report back to Master; Master makes all strategic decisions
 5. Workers should NOT make strategic decisions (e.g., which idea to pursue)
 
-## Existing Agents to Reuse
-
-These agents from Claude Scholar should be invoked when relevant:
-
-| Agent | When to Use |
-|-------|-------------|
-| literature-reviewer | Phase 1: literature search and Zotero integration |
-| data-analyst | Phase 7: statistical analysis and visualization |
-| architect | Phase 4: architecture design decisions |
-| code-reviewer | Phase 6: code review of modifications |
-| build-error-resolver | Phase 5-6: dependency/build errors |
-| dev-planner | Phase 4: task breakdown |
