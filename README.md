@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-AGPL_3.0-blue.svg" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License"></a>
   <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/Node.js-18+-green.svg" alt="Node.js 18+">
 </p>
@@ -194,7 +194,7 @@ novum/
 ├── rules/research-agents.md     #   Agent orchestration rules
 ├── config.example.yaml          #   Configuration template
 ├── CONTRIBUTING.md
-└── LICENSE                      # AGPL-3.0
+└── LICENSE                      # Apache-2.0
 ```
 
 ## Known Limitations
@@ -230,7 +230,7 @@ euanai@proton.me
 
 ## License
 
-AGPL-3.0. See [LICENSE](LICENSE) for details.
+Apache-2.0. See [LICENSE](LICENSE) for details.
 
 ## Citation
 
