@@ -36,7 +36,7 @@ A single `/research` command ran autonomously for 30 hours — literature survey
 | Hypotheses tested | 10 (7 failed, 3 competed, 1 champion) |
 | Iteration cycles | 4 (automatic regression + constraint accumulation) |
 
-The paper draft is not included — I am not a domain expert and have not had time to verify the results. Try it on your own topic and judge for yourself.
+The draft and results are preliminary and have not been independently validated; please treat them as a starting point and verify with your own runs.
 
 ## Quick Start
 
