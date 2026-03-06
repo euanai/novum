@@ -40,6 +40,12 @@ The draft and results are preliminary and have not been independently validated;
 
 ## Quick Start
 
+**System dependencies** (Ubuntu/Debian):
+```bash
+sudo apt install -y poppler-utils git-lfs curl wget
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 ```bash
 git clone https://github.com/euanai/novum.git
 cd novum
@@ -48,7 +54,7 @@ bash scripts/install.sh
 
 This installs hooks, agents, commands, skills, and rules into `~/.claude/`.
 
-**Requirements**: [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) (Opus 4.6 recommended, Max 20x plan for long runs), Python 3.10+, Node.js 18+, NVIDIA GPU 8GB+ VRAM.
+**Requirements**: [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) (Opus 4.6 recommended, Max 20x plan for long runs), Python 3.10+, Node.js 18+, NVIDIA GPU 8GB+ VRAM, `pdftotext` (from `poppler-utils`).
 
 > [!WARNING]
 > Fully autonomous runs require Claude Code's `--dangerously-skip-permissions` flag, which bypasses all tool approval prompts. The agent can execute arbitrary commands and modify files without confirmation. Use at your own risk.
